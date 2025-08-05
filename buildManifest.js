@@ -1,8 +1,11 @@
 const fs = require('fs');
 
 links = require('./links.json');
+matches = links.filter(link => link.name !== "LOCKSS (journal box)").map(link => link.url + "/*");
 
-console.log(links);
+matches = matches.concat([
+	"https://dl.acm.org/*",
+])
 
 manifest = {
 	"name": "UMass Library Redirector Extension",
@@ -16,7 +19,7 @@ manifest = {
 	"content_scripts": [
 		{
 			"js": ["scripts/content.js"],
-			"matches": links.filter(link => link.name !== "LOCKSS (journal box)").map(link => link.url + "/*"),
+			"matches": matches,
 		}
 	]
 }

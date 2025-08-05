@@ -770,7 +770,8 @@
         "https://www.loebclassics.com/*",
         "http://qvj.chadwyck.com/*",
         "https://gpa.eastview.com/*",
-        "https://www.statista.com/*"
+        "https://www.statista.com/*",
+        "https://dl.acm.org/*"
       ]
     }
   ]
