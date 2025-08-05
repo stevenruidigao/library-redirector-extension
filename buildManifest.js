@@ -5,6 +5,7 @@ links = require('./links.json');
 excluded = [
 	"LOCKSS (journal box)",
 ];
+
 matches = links.filter(link => !excluded.includes(link.name)).map(link => link.url + "/*");
 
 matches = matches.concat([
