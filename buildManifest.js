@@ -13,7 +13,7 @@ matches = matches.concat([
 ]);
 
 manifest = {
-	"name": "UMass Library Redirector Extension",
+	"name": "Library Redirector Extension",
 	"description": "Automatically redirects links to the library proxied links.",
 	"version": "1.0",
 	"manifest_version": 3,
