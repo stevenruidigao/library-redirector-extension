@@ -15,10 +15,10 @@ matches = matches.concat([
 
 manifest = defaultManifest;
 
-manifest.name = "Library Redirector Extension";
-manifest.description = "Automatically redirects links to the library proxied links.";
+manifest.name = "Library Redirector Extension BETA";
+manifest.description = "THIS EXTENSION IS FOR BETA TESTING. Automatically redirects links to the library proxied links.";
 manifest.matches = matches;
 
 fs.writeFileSync('extension/manifest.json', JSON.stringify(manifest, null, 2));
-fs.writeFileSync('extension/RELEASE', JSON.stringify(manifest, null, 2));
-fs.rmSync('extension/BETA', { force: true });
+fs.writeFileSync('extension/BETA', JSON.stringify(manifest, null, 2));
+fs.rmSync('extension/RELEASE', { force: true });
